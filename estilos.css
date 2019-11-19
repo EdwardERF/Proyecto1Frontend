@@ -17,7 +17,9 @@ body {
                        "links links links links links links links links links"
                        "footer footer footer footer footer footer footer footer footer";
 }
-/* NAVIGATION BAR */
+
+/* ------------------------------------------------- NAVIGATION BAR */
+
 .logo {
   grid-area: logo;
 }
@@ -53,7 +55,8 @@ body {
   padding: 0 22px;
 }
 
-/* LEFT LOGO */
+/* ------------------------------------------------- LEFT LOGO */
+
 .logo {
   border: none;
   background: white;
@@ -76,9 +79,17 @@ body {
   margin-bottom: -3px
 }
 
-/* IMAGEN INTRO */
+/* ------------------------------------------------- IMAGEN INTRO */
+
+.img {
+  grid-area: img;
+}
 .img {
   border: none;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  height: 300px;
+  box-sizing: border-box;
 }
 .img img {
   background: url(docs/intro-1600.jpg) 80% 20% no-repeat;
@@ -91,24 +102,87 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   font-size: 30px;
+  color: white;
   display: flex;
   justify-content: center;
-  top: 50%;
-  left: 50%;
+  margin: 0;
+  position: relative;
+  bottom: 200px;
+}
+
+/* ------------------------------------------------- PLANES */
+.planes {
+  grid-area: planes;
+  display: flex;
+  justify-content: center;
+  margin-top: -100px;
+  grid-column-start: 2;
+  grid-column-end: span 7;
+}
+
+.links {
+  border: none;
+}
+
+.personal {
+  border: 1px solid red;
+  background: white;
+  text-align: center;
+  width: 450px;
+  box-sizing: border-box;
+  margin: 5px;
+  padding: 30px 25px;
+}
+
+.empresa {
+  border: 1px solid red;
+  background: white;
+  text-align: center;
+  width: 450px;
+  box-sizing: border-box;
+  margin: 5px;
+  padding: 30px 25px;
+}
+
+.personal h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 32px;
+  font-weight: 300;
+  color: #767676;
+  margin-bottom: 40px;
+  margin-top: 0;
+}
+
+.personal h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #555555;
+}
+
+.descriptionTitle {
+  display: flex;
+  justify-content: center;
+  align-content: center;
   margin: 0;
 }
 
+.personal p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 100;
+  color: #555555;
+}
+
+.personal a {
+  text-decoration: none;
+  color: #4386FC;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  /* font-weight: 100; */
+}
 
 /* ------------------------------------------------- */
-.img {
-  grid-area: img;
-}
-.planes {
-  grid-area: planes;
-  margin-top: -80px;
-  grid-column-start: 3;
-  grid-column-end: span 5;
-}
 .apps {
   grid-area: apps;
   grid-column-start: 3;
@@ -127,4 +201,3 @@ div {
   border: 1px solid blue;
 }
 
-/* ESTOY COMENZANDO A APLICAR EL CONTENIDO DE LA CLASE data. NO PUEDO ASIGNARLE UNA ALTURA DE LA TOTALIDAD DE SUS GRIDCELLS */
