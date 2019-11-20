@@ -1,13 +1,12 @@
 body {
   background: white;
   margin: 0;
-
 }
 
 .container {
   display: grid;
   grid-template-columns: repeat(9, 1fr);
-  grid-template-rows: 65px 300px 380px 380px 60px 360px 50px;
+  grid-template-rows: 65px 300px 360px 380px 60px 360px 50px;
   grid-auto-rows: 100px;
   grid-template-areas: "logo logo data data data data data data data"
                        "img img img img img img img img img"
@@ -29,7 +28,7 @@ body {
   grid-area: data;
   display: inline-flex;
   justify-self: end;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Product Sans', sans-serif;
   font-size: 16px;
   text-align: center;
 }
@@ -111,7 +110,9 @@ body {
 }
 
 /* ------------------------------------------------- PLANES */
+/* ------------------------------------------------- PERSONAL */
 .planes {
+  border: none;
   grid-area: planes;
   display: flex;
   justify-content: center;
@@ -125,18 +126,9 @@ body {
 }
 
 .personal {
-  border: 1px solid red;
+  border: none;
   background: white;
-  text-align: center;
-  width: 450px;
-  box-sizing: border-box;
-  margin: 5px;
-  padding: 30px 25px;
-}
-
-.empresa {
-  border: 1px solid red;
-  background: white;
+  box-shadow: 1px 1.5px 4px 1px rgba(0,0,0,0.1);
   text-align: center;
   width: 450px;
   box-sizing: border-box;
@@ -157,10 +149,19 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 20px;
   font-weight: 400;
-  color: #555555;
+  color: #4C4C4C;
+}
+
+.descriptionTitle img {
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  margin-right: 5px;
 }
 
 .descriptionTitle {
+  border: none;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -172,6 +173,10 @@ body {
   font-size: 16px;
   font-weight: 100;
   color: #555555;
+  min-height: 110px;
+  line-height: 30px;
+  margin-top: 10px;
+  margin-bottom: 30px;
 }
 
 .personal a {
@@ -179,15 +184,79 @@ body {
   color: #4386FC;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
-  /* font-weight: 100; */
+  padding: 16px 26px;
 }
 
-/* ------------------------------------------------- */
+.personal a:nth-of-type(1) {
+  background: #4386fc;
+  color: white;
+}
+
+/* ------------------------------------------------- EMPRESA */
+
+.empresa {
+  border: none;
+  box-shadow: 1px 1.5px 4px 1px rgba(0,0,0,0.1);
+  background: white;
+  text-align: center;
+  width: 450px;
+  box-sizing: border-box;
+  margin: 5px;
+  padding: 30px 25px;
+}
+
+.empresa h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 32px;
+  font-weight: 300;
+  color: #767676;
+  margin-bottom: 40px;
+  margin-top: 0;
+}
+
+.empresa h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #4C4C4C;
+}
+
+.empresa p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 100;
+  color: #555555;
+  min-height: 110px;
+  line-height: 30px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.empresa a {
+  text-decoration: none;
+  color: #4386FC;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  padding: 16px 26px;
+  background: #4386fc;
+  color: white;
+}
+
+/* ------------------------------------------------- APPS */
+
 .apps {
   grid-area: apps;
   grid-column-start: 3;
   grid-column-end: span 5;
+  display: inherit;
+  justify-items: center;
 }
+
+.apps-container {
+  border: none;
+}
+
+/* ------------------------------------------------- */
 .social {
   grid-area: social;
 }
