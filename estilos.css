@@ -294,7 +294,6 @@ body {
   grid-area: social;
   display: inline-flex;
   align-items: center;
-  margin-bottom: 10px;
   background: #F9F9F9;
 }
 
@@ -312,10 +311,98 @@ body {
   height: 16px;
 }
 
-/* ------------------------------------------------- */
+/* ------------------------------------------------- LINKS */
+
 .links {
+  box-shadow: 0 0 4px 0 rgba(0,0,0,0.1);
+  border: none;
   grid-area: links;
+  background: #F9F9F9;
+  display: inline-flex;
+  justify-content: space-between;
+  text-align: center;
+  margin: 0 1.48%;
 }
+
+
+h4 {
+  margin-bottom: 10px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  font-size: 90%;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  justify-items: center;
+  display: inline-block;
+  margin: 0;
+}
+
+.acerca-de li {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+.acerca-de {
+  border: none;
+  width: 19%;
+  margin: 20px 0;
+}
+
+.planes-precios {
+  border: none;
+  width: 19%;
+  margin: 20px auto;
+}
+
+.planes-precios li {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+.descargas {
+  border: none;
+  width: 19%;
+  margin: 20px auto;
+}
+
+.descargas li {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+.asistencia {
+  border: none;
+  width: 19%;
+  margin: 20px auto;
+}
+
+.asistencia li {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+.soluciones {
+  border: none;
+  width: 19%;
+  margin: 20px 0;
+}
+
+.soluciones li {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+
+/* ------------------------------------------------- */
 .footer {
   grid-area: footer;
 }
