@@ -245,21 +245,74 @@ body {
 /* ------------------------------------------------- APPS */
 
 .apps {
+  border: none;
   grid-area: apps;
-  grid-column-start: 3;
-  grid-column-end: span 5;
+  grid-column-start: 2;
+  grid-column-end: span 7;
   display: inherit;
   justify-items: center;
+  padding: 50px 0 100px;
+}
+
+.apps h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+  color: #555555;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0 0;
+}
+
+.apps p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 100;
+  color: #555555;
+  display: block;
+  margin: 10px 0;
+}
+
+.google-play {
+  margin: 10px;
+  width: 151px;
+}
+
+.appstore {
+  margin: 10px;
+  width: 151px;
 }
 
 .apps-container {
   border: none;
 }
 
-/* ------------------------------------------------- */
+/* ------------------------------------------------- SOCIAL */
+
 .social {
+  border: none;
   grid-area: social;
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 10px;
+  background: #F9F9F9;
 }
+
+.social p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14.5px;
+  font-weight: 100;
+  color: #555555;
+  margin: 0 8px 0 1.48%;
+}
+
+.social img {
+  margin: 4px;
+  width: 16px;
+  height: 16px;
+}
+
+/* ------------------------------------------------- */
 .links {
   grid-area: links;
 }
