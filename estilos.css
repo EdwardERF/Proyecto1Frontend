@@ -121,7 +121,7 @@ body {
   grid-column-end: span 7;
 }
 
-.links {
+.links-personal {
   border: none;
 }
 
@@ -302,7 +302,8 @@ body {
   font-size: 14.5px;
   font-weight: 100;
   color: #555555;
-  margin: 0 8px 0 1.48%;
+  margin: 0 8px 0 0;
+  padding-left: 15px;
 }
 
 .social img {
@@ -320,8 +321,9 @@ body {
   background: #F9F9F9;
   display: inline-flex;
   justify-content: space-between;
-  text-align: center;
-  margin: 0 1.48%;
+  /* text-align: center; */
+  /* margin: 0 1.48%; */
+  padding: 10px 15px;
 }
 
 
@@ -345,6 +347,7 @@ ul {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 13px;
   margin-bottom: 5px;
+  box-sizing: border-box;
 }
 
 .acerca-de {
@@ -363,6 +366,7 @@ ul {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 13px;
   margin-bottom: 5px;
+  box-sizing: border-box;
 }
 
 .descargas {
@@ -375,6 +379,7 @@ ul {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 13px;
   margin-bottom: 5px;
+  box-sizing: border-box;
 }
 
 .asistencia {
@@ -387,6 +392,7 @@ ul {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 13px;
   margin-bottom: 5px;
+  box-sizing: border-box;
 }
 
 .soluciones {
@@ -399,14 +405,63 @@ ul {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 13px;
   margin-bottom: 5px;
+  box-sizing: border-box;
 }
 
+/* ------------------------------------------------- FOOTER */
 
-/* ------------------------------------------------- */
 .footer {
+  /* border: none; */
   grid-area: footer;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
+
+.footer-links {
+  border: none;
+  /* margin: 0 1.48%; */
+}
+
+.footer-links ul {
+  list-style: none;
+  display: inline-flex;
+  justify-content: start;
+}
+
+.footer-links li {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+}
+
+.footer-links li:after {
+  content: " · ";
+}
+
+.footer-links li:last-of-type:after {
+  display: none;
+}
+
+.footer-idioma {
+  border: 0.1px solid #555;
+  background: white;
+}
+
+.footer-idioma select {
+  width: 254px;
+  height: 13px;
+  line-height: 3.08;
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  display: inline-flex;
+  justify-content: end;
+  align-items: center;
+  margin: 1px;
+}
+
 div {
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
 }
 
